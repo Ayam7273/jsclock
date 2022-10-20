@@ -1,0 +1,252 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: hsl(0, 0%, 83%);
+  }
+  
+  .clock {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background-color: rgb(255, 255, 255);
+    border: 10px solid black;
+    border-radius: 100%;
+    transform: rotate(180deg);
+  }
+  .clock:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 20px;
+    height: 20px;
+    border: 5px solid white;
+    background-color: black;
+    border-radius: 100%;
+    z-index: 99;
+  }
+  
+  .clock__hand {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin: auto;
+    height: 8px;
+    background-color: black;
+    transform-origin: 0;
+    transition: transform cubic-bezier(0.1, 2.5, 0.5, 1);
+  }
+  .clock__hand--hour {
+    width: calc(50% - 250px / 4);
+  }
+  .clock__hand--minute {
+    width: calc(50% - 250px / 6);
+  }
+  .clock__hand--second {
+    width: calc(50% - 250px / 10);
+    height: 4px;
+    background-color: red;
+  }
+  
+  .clock__tick {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    width: 2px;
+    height: 8px;
+    background-color: lightgray;
+    transform-origin: 0 115px;
+    transform: translateX(-50%);
+  }
+  .clock__tick:nth-child(5n+1) {
+    width: 4px;
+    height: 16px;
+    background-color: black;
+  }
+  .clock__tick:nth-child(1) {
+    transform: rotate(0deg) translateX(-50%);
+  }
+  .clock__tick:nth-child(2) {
+    transform: rotate(6deg) translateX(-50%);
+  }
+  .clock__tick:nth-child(3) {
+    transform: rotate(12deg) translateX(-50%);
+  }
+  .clock__tick:nth-child(4) {
+    transform: rotate(18deg) translateX(-50%);
+  }
+  .clock__tick:nth-child(5) {
+    transform: rotate(24deg) translateX(-50%);
+  }
+  .clock__tick:nth-child(6) {
+    transform: rotate(30deg) translateX(-50%);
+  }
+  .clock__tick:nth-child(7) {
+    transform: rotate(36deg) translateX(-50%);
+  }
+  .clock__tick:nth-child(8) {
+    transform: rotate(42deg) translateX(-50%);
+  }
+  .clock__tick:nth-child(9) {
+    transform: rotate(48deg) translateX(-50%);
+  }
+  .clock__tick:nth-child(10) {
+    transform: rotate(54deg) translateX(-50%);
+  }
+  .clock__tick:nth-child(11) {
+    transform: rotate(60deg) translateX(-50%);
+  }
+  .clock__tick:nth-child(12) {
+    transform: rotate(66deg) translateX(-50%);
+  }
+  .clock__tick:nth-child(13) {
+    transform: rotate(72deg) translateX(-50%);
+  }
+  .clock__tick:nth-child(14) {
+    transform: rotate(78deg) translateX(-50%);
+  }
+  .clock__tick:nth-child(15) {
+    transform: rotate(84deg) translateX(-50%);
+  }
+  .clock__tick:nth-child(16) {
+    transform: rotate(90deg) translateX(-50%);
+  }
+  .clock__tick:nth-child(17) {
+    transform: rotate(96deg) translateX(-50%);
+  }
+  .clock__tick:nth-child(18) {
+    transform: rotate(102deg) translateX(-50%);
+  }
+  .clock__tick:nth-child(19) {
+    transform: rotate(108deg) translateX(-50%);
+  }
+  .clock__tick:nth-child(20) {
+    transform: rotate(114deg) translateX(-50%);
+  }
+  .clock__tick:nth-child(21) {
+    transform: rotate(120deg) translateX(-50%);
+  }
+  .clock__tick:nth-child(22) {
+    transform: rotate(126deg) translateX(-50%);
+  }
+  .clock__tick:nth-child(23) {
+    transform: rotate(132deg) translateX(-50%);
+  }
+  .clock__tick:nth-child(24) {
+    transform: rotate(138deg) translateX(-50%);
+  }
+  .clock__tick:nth-child(25) {
+    transform: rotate(144deg) translateX(-50%);
+  }
+  .clock__tick:nth-child(26) {
+    transform: rotate(150deg) translateX(-50%);
+  }
+  .clock__tick:nth-child(27) {
+    transform: rotate(156deg) translateX(-50%);
+  }
+  .clock__tick:nth-child(28) {
+    transform: rotate(162deg) translateX(-50%);
+  }
+  .clock__tick:nth-child(29) {
+    transform: rotate(168deg) translateX(-50%);
+  }
+  .clock__tick:nth-child(30) {
+    transform: rotate(174deg) translateX(-50%);
+  }
+  .clock__tick:nth-child(31) {
+    transform: rotate(180deg) translateX(-50%);
+  }
+  .clock__tick:nth-child(32) {
+    transform: rotate(186deg) translateX(-50%);
+  }
+  .clock__tick:nth-child(33) {
+    transform: rotate(192deg) translateX(-50%);
+  }
+  .clock__tick:nth-child(34) {
+    transform: rotate(198deg) translateX(-50%);
+  }
+  .clock__tick:nth-child(35) {
+    transform: rotate(204deg) translateX(-50%);
+  }
+  .clock__tick:nth-child(36) {
+    transform: rotate(210deg) translateX(-50%);
+  }
+  .clock__tick:nth-child(37) {
+    transform: rotate(216deg) translateX(-50%);
+  }
+  .clock__tick:nth-child(38) {
+    transform: rotate(222deg) translateX(-50%);
+  }
+  .clock__tick:nth-child(39) {
+    transform: rotate(228deg) translateX(-50%);
+  }
+  .clock__tick:nth-child(40) {
+    transform: rotate(234deg) translateX(-50%);
+  }
+  .clock__tick:nth-child(41) {
+    transform: rotate(240deg) translateX(-50%);
+  }
+  .clock__tick:nth-child(42) {
+    transform: rotate(246deg) translateX(-50%);
+  }
+  .clock__tick:nth-child(43) {
+    transform: rotate(252deg) translateX(-50%);
+  }
+  .clock__tick:nth-child(44) {
+    transform: rotate(258deg) translateX(-50%);
+  }
+  .clock__tick:nth-child(45) {
+    transform: rotate(264deg) translateX(-50%);
+  }
+  .clock__tick:nth-child(46) {
+    transform: rotate(270deg) translateX(-50%);
+  }
+  .clock__tick:nth-child(47) {
+    transform: rotate(276deg) translateX(-50%);
+  }
+  .clock__tick:nth-child(48) {
+    transform: rotate(282deg) translateX(-50%);
+  }
+  .clock__tick:nth-child(49) {
+    transform: rotate(288deg) translateX(-50%);
+  }
+  .clock__tick:nth-child(50) {
+    transform: rotate(294deg) translateX(-50%);
+  }
+  .clock__tick:nth-child(51) {
+    transform: rotate(300deg) translateX(-50%);
+  }
+  .clock__tick:nth-child(52) {
+    transform: rotate(306deg) translateX(-50%);
+  }
+  .clock__tick:nth-child(53) {
+    transform: rotate(312deg) translateX(-50%);
+  }
+  .clock__tick:nth-child(54) {
+    transform: rotate(318deg) translateX(-50%);
+  }
+  .clock__tick:nth-child(55) {
+    transform: rotate(324deg) translateX(-50%);
+  }
+  .clock__tick:nth-child(56) {
+    transform: rotate(330deg) translateX(-50%);
+  }
+  .clock__tick:nth-child(57) {
+    transform: rotate(336deg) translateX(-50%);
+  }
+  .clock__tick:nth-child(58) {
+    transform: rotate(342deg) translateX(-50%);
+  }
+  .clock__tick:nth-child(59) {
+    transform: rotate(348deg) translateX(-50%);
+  }
+  .clock__tick:nth-child(60) {
+    transform: rotate(354deg) translateX(-50%);
+}
