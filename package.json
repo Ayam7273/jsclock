@@ -1,0 +1,27 @@
+{
+  "name": "js-clock",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+    },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ayam7273/jsclock.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ayam7273/jsclock/issues"
+  },
+  "homepage": "https://github.com/Ayam7273/jsclock#readme",
+  "description": "",
+  "devDependencies": {
+    "parcel": "^2.7.0"
+  },
+  "dependencies": {
+    "date-fns-tz": "^1.3.7"
+  }
+}

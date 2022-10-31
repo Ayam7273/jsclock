@@ -1,20 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
-    <title>Clock</title>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>world Clock</title>
+       <link rel="stylesheet" href="style.css">
+       <script src="app.js" type="module"></script>
 </head>
 <body>
-    <div class="clock" id="new-clock">
-        <div class="clock__ticks"><span class="clock__tick"></span><span class="clock__tick"></span><span class="clock__tick"></span><span class="clock__tick"></span><span class="clock__tick"></span><span class="clock__tick"></span><span class="clock__tick"></span><span class="clock__tick"></span><span class="clock__tick"></span><span class="clock__tick"></span><span class="clock__tick"></span><span class="clock__tick"></span><span class="clock__tick"></span><span class="clock__tick"></span><span class="clock__tick"></span><span class="clock__tick"></span><span class="clock__tick"></span><span class="clock__tick"></span><span class="clock__tick"></span><span class="clock__tick"></span><span class="clock__tick"></span><span class="clock__tick"></span><span class="clock__tick"></span><span class="clock__tick"></span><span class="clock__tick"></span><span class="clock__tick"></span><span class="clock__tick"></span><span class="clock__tick"></span><span class="clock__tick"></span><span class="clock__tick"></span><span class="clock__tick"></span><span class="clock__tick"></span><span class="clock__tick"></span><span class="clock__tick"></span><span class="clock__tick"></span><span class="clock__tick"></span><span class="clock__tick"></span><span class="clock__tick"></span><span class="clock__tick"></span><span class="clock__tick"></span><span class="clock__tick"></span><span class="clock__tick"></span><span class="clock__tick"></span><span class="clock__tick"></span><span class="clock__tick"></span><span class="clock__tick"></span><span class="clock__tick"></span><span class="clock__tick"></span><span class="clock__tick"></span><span class="clock__tick"></span><span class="clock__tick"></span><span class="clock__tick"></span><span class="clock__tick"></span><span class="clock__tick"></span><span class="clock__tick"></span><span class="clock__tick"></span><span class="clock__tick"></span><span class="clock__tick"></span><span class="clock__tick"></span><span class="clock__tick"></span>
-        </div>
-        <div class="clock__hand clock__hand--hour"></div>
-        <div class="clock__hand clock__hand--minute"></div>
-        <div class="clock__hand clock__hand--second"></div>
-      </div>
+       <main>
+              <div class="container">
+                     <div class="clock--wrapper">
+                            <h2>Africa</h2>
+                            <div class="clock" data-locale="Africa/Lagos">
+                                   <svg class="clockface" width="300" height="300" viewBox="-150 -150 300 300">
+                                    <circle class="ring ring--seconds" cx="0" cy="0" r="145" pathlength="60"/>
+                                    <circle class="ring ring--hours" cx="0" cy="0" r="145" pathlength="12"/>
+                                    <text x="50" y="-5" class="date">23</text>
+                                    <text x="50" y="10" class="am-pm">am</text> 
+                                    <line class="hand hand--minute" x1="0" y1="2" x2="0" y2="-110" />
+                                    <line class="hand hand--hour" x1="0" y1="2" x2="0" y2="-60" />
+                                    <circle class="ring ring--center" r="3"/>                                                             
+                                    <line class="hand hand--second" x1="0" y1="12" x2="0" y2="-130" />
+                                   </svg>
+                            </div>
+                     </div>
+              </div>
+              <div class="container">
+                     <div class="clock--wrapper"data-locale="Europe/London">
+                            <h2>Europe</h2>
+                            <div class="clock">
+                                   <svg class="clockface" width="300" height="300" viewBox="-150 -150 300 300">
+                                    <circle class="ring ring--seconds" cx="0" cy="0" r="145" pathlength="60"/>
+                                    <circle class="ring ring--hours" cx="0" cy="0" r="145" pathlength="12"/>
+                                    <text x="50" y="-5" class="date">23</text>
+                                    <text x="50" y="10" class="am-pm">am</text> 
+                                    <line class="hand hand--minute" x1="0" y1="2" x2="0" y2="-110" />
+                                    <line class="hand hand--hour" x1="0" y1="2" x2="0" y2="-60" />
+                                    <circle class="ring ring--center" r="3"/>                                                             
+                                    <line class="hand hand--second" x1="0" y1="12" x2="0" y2="-130" />
+                                   </svg>
+                            </div>
+                     </div>
+              </div>
+              <div class="container">
+                     <div class="clock--wrapper">
+                            <h2>Pacific</h2>
+                            <div class="clock"data-locale="Pacific/Pohnpei">
+                                   <svg class="clockface" width="300" height="300" viewBox="-150 -150 300 300">
+                                    <circle class="ring ring--seconds" cx="0" cy="0" r="145" pathlength="60"/>
+                                    <circle class="ring ring--hours" cx="0" cy="0" r="145" pathlength="12"/>
+                                    <text x="50" y="-5" class="date">23</text>
+                                    <text x="50" y="10" class="am-pm">am</text> 
+                                    <line class="hand hand--minute" x1="0" y1="2" x2="0" y2="-110" />
+                                    <line class="hand hand--hour" x1="0" y1="2" x2="0" y2="-60" />
+                                    <circle class="ring ring--center" r="3"/>                                                             
+                                    <line class="hand hand--second" x1="0" y1="12" x2="0" y2="-130" />
+                                   </svg>
+                            </div>
+                     </div>
+              </div>
+              <div class="container">
+                     <div class="clock--wrapper">
+                            <h2>Indian</h2>
+                            <div class="clock"data-locale="Indian/Cocos">
+                                   <svg class="clockface" width="300" height="300" viewBox="-150 -150 300 300">
+                                    <circle class="ring ring--seconds" cx="0" cy="0" r="145" pathlength="60"/>
+                                    <circle class="ring ring--hours" cx="0" cy="0" r="145" pathlength="12"/>
+                                    <text x="50" y="-5" class="date">23</text>
+                                    <text x="50" y="10" class="am-pm">am</text> 
+                                    <line class="hand hand--minute" x1="0" y1="2" x2="0" y2="-110" />
+                                    <line class="hand hand--hour" x1="0" y1="2" x2="0" y2="-60" />
+                                    <circle class="ring ring--center" r="3"/>                                                             
+                                    <line class="hand hand--second" x1="0" y1="12" x2="0" y2="-130" />
+                                   </svg>
+                            </div>
+                     </div>
+              </div>
+              <div class="container">
+                     <div class="clock--wrapper">
+                            <h2>Australia</h2>
+                            <div class="clock"data-locale="Australia/Melbourne">
+                                   <svg class="clockface" width="300" height="300" viewBox="-150 -150 300 300">
+                                    <circle class="ring ring--seconds" cx="0" cy="0" r="145" pathlength="60"/>
+                                    <circle class="ring ring--hours" cx="0" cy="0" r="145" pathlength="12"/>
+                                    <text x="50" y="-5" class="date">23</text>
+                                    <text x="50" y="10" class="am-pm">am</text> 
+                                    <line class="hand hand--minute" x1="0" y1="2" x2="0" y2="-110" />
+                                    <line class="hand hand--hour" x1="0" y1="2" x2="0" y2="-60" />
+                                    <circle class="ring ring--center" r="3"/>                                                             
+                                    <line class="hand hand--second" x1="0" y1="12" x2="0" y2="-130" />
+                                   </svg>
+                            </div>
+                     </div>
+              </div>
+              <div class="container">
+                     <div class="clock--wrapper">
+                            <h2>America</h2>
+                            <div class="clock"data-locale="America/Denver">
+                                   <svg class="clockface" width="300" height="300" viewBox="-150 -150 300 300">
+                                    <circle class="ring ring--seconds" cx="0" cy="0" r="145" pathlength="60"/>
+                                    <circle class="ring ring--hours" cx="0" cy="0" r="145" pathlength="12"/>
+                                    <text x="50" y="-5" class="date">23</text>
+                                    <text x="50" y="10" class="am-pm">am</text> 
+                                    <line class="hand hand--minute" x1="0" y1="2" x2="0" y2="-110" />
+                                    <line class="hand hand--hour" x1="0" y1="2" x2="0" y2="-60" />
+                                    <circle class="ring ring--center" r="3"/>                                                             
+                                    <line class="hand hand--second" x1="0" y1="12" x2="0" y2="-130" />
+                                   </svg>
+                            </div>
+                     </div>
+              </div>
+       </main>
 </body>
 </html>
