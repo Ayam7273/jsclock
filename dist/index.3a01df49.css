@@ -4,6 +4,22 @@
   padding: 0;
 }
 
+.container {
+  min-height: 100vh;
+  min-width: 100vh;
+  display: flex;
+}
+
+.container1, .container2, .container3, .container4, .container5 {
+  padding-top: 25%;
+  padding-right: 300px;
+}
+
+.container6 {
+  padding-top: 25%;
+  padding-left: 100px;
+}
+
 :root {
   --bkg: #232946;
   --dark: #121629;

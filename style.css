@@ -3,6 +3,43 @@
   margin: 0;
   padding: 0;
 }
+.container {
+  display: flex;
+  min-height: 100vh;
+  min-width: 100vh;
+}
+
+.container1 {
+  padding-top: 25%;
+  padding-right: 300px;
+}
+
+.container2 {
+  padding-top: 25%;
+  padding-right: 300px;
+}
+
+.container3 {
+  padding-top: 25%;
+  padding-right: 300px;
+}
+
+.container4 {
+  padding-top: 25%;
+  padding-right: 300px;
+}
+
+.container5 {
+  padding-top: 25%;
+  padding-right: 300px;
+}
+
+.container6 {
+  padding-top: 25%;
+  padding-left: 100px;
+}
+
+
 
 :root {
   --bkg: #232946;
